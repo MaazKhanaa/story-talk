@@ -1,0 +1,23 @@
+@import "/src/style/vairables";
+
+.header-wrapper {
+
+    .ant-menu-light.ant-menu-horizontal {
+
+        text-decoration: none !important;
+        color: $white-color;
+
+        .ant-menu-item-selected {
+            color: #3DB8A5;
+            text-decoration: none !important;
+        }
+
+        :hover {
+            color: #3DB8A5;
+        }
+
+        ::after {
+            display: none;
+        }
+    }
+}

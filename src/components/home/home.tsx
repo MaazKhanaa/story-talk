@@ -1,8 +1,17 @@
-import React from 'react'
+import React from 'react';
+
+
+// ================== Components ==================
+import LayoutComponent from '../layout/layout'
+import BannerComponent from './banner/banner'
+
+
 
 const HomeComponent = () => {
     return (
-        <div>Home Component</div>
+        <LayoutComponent>
+            <BannerComponent />
+        </LayoutComponent>
     )
 }
 

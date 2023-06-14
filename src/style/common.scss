@@ -1,0 +1,72 @@
+@import "./vairables";
+
+
+
+
+// ======================== BG COLORS ========================
+
+
+
+// ======================== COLORS ========================
+.color-white {
+    color: $white-color;
+}
+
+
+
+// ======================== COMMON CLASSES ========================
+
+.nav-item {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $white-color;
+}
+
+
+
+
+
+
+
+// ======================== FLEX ========================
+
+.d-block {
+    display: block;
+}
+
+
+
+
+
+// ======================== UTILITY ========================
+
+.text-center {
+    text-align: center;
+}
+
+.m-auto {
+    margin: auto;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.bg-none {
+    background: none;
+}
+
+.w-100 {
+    width: 100%;
+}

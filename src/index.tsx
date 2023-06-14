@@ -11,7 +11,7 @@ import App from './App';
 
 
 // ============== Style ==============
-import './index.css';
+import './index.scss';
 
 
 
