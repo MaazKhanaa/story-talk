@@ -41,10 +41,12 @@ const DASHBOARDPAGE = Loadable(lazy(() => import("../pages/dashboard")));
 
 export const ROUTES = [
 
-    { path: "/", element: <Navigate to="/home" /> },
+    // { path: "/", element: <Navigate to="home" /> },
+    { path: "/", element: <HOMEPAGE /> },
     { path: "/dashboard", element: <DASHBOARDPAGE /> },
     { path: "/sign-in", element: <SIGNINPAGE /> },
     { path: "/sign-up", element: <SIGNUPPAGE /> },
     { path: "/home", element: <HOMEPAGE /> },
+    // { path: "*", element: <NotFound />},
 
 ]
