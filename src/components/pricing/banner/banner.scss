@@ -2,21 +2,28 @@
     position: relative;
 
 
-    .banner-content{
+    .banner-content {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         min-height: 90vh;
+
     }
 
 
+    .banner-shadow {
+        background: radial-gradient(310.48% 100% at 50% 0%, rgba(0, 0, 0, 0.53) 5.96%, rgba(29, 35, 52, 0.47) 89.85%, #08090A 99.66%) !important;
 
-    .banner-img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
+        .banner-img {
+            position: absolute;
+            background-repeat: no-repeat;
+
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
     }
 
     .mt-1 {
@@ -24,9 +31,9 @@
     }
 
 
-    .mt-5{
+    .mt-5 {
         margin-top: 5rem;
     }
-    
+
 
 }

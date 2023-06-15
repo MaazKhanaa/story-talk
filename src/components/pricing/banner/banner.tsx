@@ -16,7 +16,10 @@ const BannerComponent = () => {
     return (
         <div className='banner-wrapper'>
             {/* <h2>Banner</h2> */}
-            <img src={APP_ASSETS.pricingBannerBgImg} alt="banner" width="100%" className='banner-img' />
+            <span className='banner-shadow'>
+                <img src={APP_ASSETS.pricingBannerBgImg} alt="banner" width="100%" className='banner-img' />
+
+            </span>
 
             <div className='banner-content'>
                 <AppHeading text="Pricing" />
