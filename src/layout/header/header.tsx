@@ -9,7 +9,7 @@ import { Layout, Menu, Row, Col } from 'antd'
 
 
 // ================== Assets ==================
-import LogoSvg from '../../../assets/svg/logo';
+import LogoSvg from '../../assets/svg/logo';
 
 
 

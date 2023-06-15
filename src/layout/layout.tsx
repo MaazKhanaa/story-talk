@@ -14,8 +14,6 @@ import HeaderComponent from './header/header';
 
 
 // ================== HOOKs ==================
-import useAuth from '../../hooks/useAuth';
-
 
 
 const { Content } = Layout;
@@ -25,9 +23,9 @@ const { Content } = Layout;
 
 const LayoutComponent = () => {
 
-    const { isAuthenticated } = useAuth();
+    // const { isAuthenticated } = useAuth();
 
-    console.log("Is authicated ===> ", isAuthenticated);
+    // console.log("Is authicated ===> ", isAuthenticated);
 
 
 

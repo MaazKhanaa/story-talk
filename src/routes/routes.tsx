@@ -34,7 +34,7 @@ const UNAUTHORIZEDPAGE = Loadable(lazy(() => import("../pages/un-authorized")));
 
 
 // =============== Authorized Pages ===============
-const APPLAYOUT = Loadable(lazy(() => import("../components/layout/layout")));
+const APPLAYOUT = Loadable(lazy(() => import("../layout/layout")));
 const DASHBOARDPAGE = Loadable(lazy(() => import("../pages/dashboard")));
 
 
@@ -65,42 +65,48 @@ const LAYOUT_ROUTES = [
         element: <APPLAYOUT />,
         children: [
             {
-                path: "home", element: (
+                path: "home",
+                element: (
                     <RequireAuth>
                         <HOMEPAGE />
                     </RequireAuth>
                 ),
             },
             {
-                path: "about", element: (
+                path: "about",
+                element: (
                     <RequireAuth>
                         <ABOUTPAGE />
                     </RequireAuth>
                 )
             },
             {
-                path: "pricing", element: (
+                path: "pricing",
+                element: (
                     <RequireAuth>
                         <PRICINGPAGE />
                     </RequireAuth>
                 )
             },
             {
-                path: "contact-us", element: (
+                path: "contact-us",
+                element: (
                     <RequireAuth>
                         <CONTACTUSPAGE />
                     </RequireAuth>
                 )
             },
             {
-                path: "sign-in", element: (
+                path: "sign-in",
+                element: (
                     <RequireAuth>
                         <SIGNINPAGE />
                     </RequireAuth>
                 )
             },
             {
-                path: "sign-up", element: (
+                path: "sign-up",
+                element: (
                     <RequireAuth>
                         <SIGNUPPAGE />
                     </RequireAuth>
