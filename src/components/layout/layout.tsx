@@ -1,8 +1,9 @@
 import React from 'react'
+import { Outlet } from "react-router-dom";
 
 
 // ================== Ant Components ==================
-import { Layout } from 'antd'
+import { Layout } from 'antd';
 
 
 
@@ -11,10 +12,25 @@ import HeaderComponent from './header/header';
 
 
 
+
+// ================== HOOKs ==================
+import useAuth from '../../hooks/useAuth';
+
+
+
 const { Content } = Layout;
 
 
-const LayoutComponent = ({ children }: any) => {
+
+
+const LayoutComponent = () => {
+
+    const { isAuthenticated } = useAuth();
+
+    console.log("Is authicated ===> ", isAuthenticated);
+
+
+
     return (
         <Layout className='bg-none'>
             <Layout className='bg-none'>
@@ -22,7 +38,7 @@ const LayoutComponent = ({ children }: any) => {
                     <HeaderComponent />
                 </div>
                 <Content>
-                    {children}
+                    <Outlet />
                 </Content>
             </Layout>
         </Layout>

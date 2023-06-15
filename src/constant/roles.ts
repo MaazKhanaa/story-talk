@@ -1,8 +1,16 @@
+
+export const ROLES = {
+  user: "user",
+  admin: "admin",
+}
+
+
+
 // ============================================
-export const ROLES = [
+export const NEW_ROLES = [
     {
-        name: "client",
-        label: "Client"
+        name: "user",
+        label: "User"
     },
     {
         name: "admin",

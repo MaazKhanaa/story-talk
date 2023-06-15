@@ -61,9 +61,9 @@ const HeaderComponent = () => {
                     <Row>
                         {/* <Col>Eng</Col> */}
                         <Col>
-                            <Link to="/home" className='nav-item'>Login</Link>
+                            <Link to="/sign-in" className='nav-item'>Login</Link>
                             <span>/</span>
-                            <Link to="/home" className='nav-item'>Signup</Link>
+                            <Link to="/sign-up" className='nav-item'>Signup</Link>
                         </Col>
                     </Row>
                 </Col>
