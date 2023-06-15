@@ -25,6 +25,9 @@ const SIGNUPPAGE = Loadable(lazy(() => import("../pages/sign-up")));
 
 // =============== Un-Restricted Pages =============== //
 const HOMEPAGE = Loadable(lazy(() => import("../pages/home")));
+const ABOUTPAGE = Loadable(lazy(() => import("../pages/about")));
+const PRICINGPAGE = Loadable(lazy(() => import("../pages/pricing")));
+const CONTACTUSPAGE = Loadable(lazy(() => import("../pages/contact-us")));
 const UNAUTHORIZEDPAGE = Loadable(lazy(() => import("../pages/un-authorized")));
 
 
@@ -54,12 +57,16 @@ const NONRESTRICTED_ROUTES = [
 
 
 // =============== Layout Routes ===============
+// =============== Render Pages in Layout so write in children of APP_LAYOUT ===============
 const LAYOUT_ROUTES = [
     {
         path: "/",
         element: <APPLAYOUT />,
         children: [
             { path: "home", element: <HOMEPAGE /> },
+            { path: "/about", element: <ABOUTPAGE /> },
+            { path: "/pricing", element: <PRICINGPAGE /> },
+            { path: "/contact-us", element: <CONTACTUSPAGE /> },
             { path: "sign-in", element: <SIGNINPAGE /> },
             { path: "sign-up", element: <SIGNUPPAGE /> },
             ...RESTRICTED_ROUTES,

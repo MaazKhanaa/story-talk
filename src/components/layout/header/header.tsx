@@ -40,17 +40,17 @@ const HeaderComponent = () => {
                             </Link>
                         </Menu.Item>
                         <Menu.Item key="2">
-                            <Link to="/home" className='nav-item'>
+                            <Link to="/about" className='nav-item'>
                                 About
                             </Link>
                         </Menu.Item>
                         <Menu.Item key="3">
-                            <Link to="/home" className='nav-item'>
+                            <Link to="/pricing" className='nav-item'>
                                 Pricing
                             </Link>
                         </Menu.Item>
                         <Menu.Item key="4">
-                            <Link to="/home" className='nav-item'>
+                            <Link to="/contact-us" className='nav-item'>
                                 Contact Us
                             </Link>
                         </Menu.Item>
@@ -62,7 +62,7 @@ const HeaderComponent = () => {
                         {/* <Col>Eng</Col> */}
                         <Col>
                             <Link to="/sign-in" className='nav-item'>Login</Link>
-                            <span className='color-white' style={{margin:"0 0.5rem"}}>/</span>
+                            <span className='color-white' style={{ margin: "0 0.5rem" }}>/</span>
                             <Link to="/sign-up" className='nav-item'>Signup</Link>
                         </Col>
                     </Row>
