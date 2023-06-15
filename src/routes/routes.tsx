@@ -1,5 +1,6 @@
 import React, { FC, lazy, LazyExoticComponent, Suspense } from 'react';
 import { Navigate } from 'react-router-dom';
+import RequireAuth from '../components/require-auth/require-auth';
 
 
 // ============== Page Loading Behaviour ============== //
@@ -63,12 +64,48 @@ const LAYOUT_ROUTES = [
         path: "/",
         element: <APPLAYOUT />,
         children: [
-            { path: "home", element: <HOMEPAGE />, },
-            { path: "about", element: <ABOUTPAGE /> },
-            { path: "pricing", element: <PRICINGPAGE /> },
-            { path: "contact-us", element: <CONTACTUSPAGE /> },
-            { path: "sign-in", element: <SIGNINPAGE /> },
-            { path: "sign-up", element: <SIGNUPPAGE /> },
+            {
+                path: "home", element: (
+                    <RequireAuth>
+                        <HOMEPAGE />
+                    </RequireAuth>
+                ),
+            },
+            {
+                path: "about", element: (
+                    <RequireAuth>
+                        <ABOUTPAGE />
+                    </RequireAuth>
+                )
+            },
+            {
+                path: "pricing", element: (
+                    <RequireAuth>
+                        <PRICINGPAGE />
+                    </RequireAuth>
+                )
+            },
+            {
+                path: "contact-us", element: (
+                    <RequireAuth>
+                        <CONTACTUSPAGE />
+                    </RequireAuth>
+                )
+            },
+            {
+                path: "sign-in", element: (
+                    <RequireAuth>
+                        <SIGNINPAGE />
+                    </RequireAuth>
+                )
+            },
+            {
+                path: "sign-up", element: (
+                    <RequireAuth>
+                        <SIGNUPPAGE />
+                    </RequireAuth>
+                )
+            },
             ...RESTRICTED_ROUTES,
         ],
     },
