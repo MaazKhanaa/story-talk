@@ -1,0 +1,13 @@
+@import "/src/style/variables";
+
+
+.app-heading-wrapper {
+    font-weight: $fw-700;
+    font-size: $fs-100;
+    line-height: 100px;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-family: $primary-font;
+    margin: 0;
+}

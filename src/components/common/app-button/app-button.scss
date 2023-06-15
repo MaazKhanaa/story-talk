@@ -1,0 +1,21 @@
+
+@import "/src/style/variables";
+
+.app-button-wrapper {
+    text-transform: capitalize;
+    font-weight: $fw-600;
+    font-size: $fs-36;
+    line-height: $lh-49;
+    text-align: center;
+    color: $primary-color;
+    padding: 20px 45px;
+    height: 90px;
+    background: linear-gradient(194.68deg, rgba(158, 218, 209, 0.1) 11.27%, rgba(61, 179, 162, 0.1) 90.4%);
+    border: 2px solid $primary-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(17.5px);
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: $secondary-font;
+    
+}

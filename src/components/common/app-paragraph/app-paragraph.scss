@@ -1,0 +1,11 @@
+@import "/src/style/variables";
+
+
+.app-paragraph-wrapper {
+    font-weight: $fw-400;
+    font-size: $fs-30;
+    line-height: $lh-36;
+    letter-spacing: 2px;
+    font-family: $primary-font;
+    margin: 0;
+}

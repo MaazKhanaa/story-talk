@@ -1,6 +1,16 @@
-@import "./vairables";
+@import "./variables";
 
 
+
+
+// ======================== FONTS ========================
+.primary-font {
+    font-family: $primary-font;
+}
+
+.secondary-font {
+    font-family: $secondary-font;
+}
 
 
 // ======================== BG COLORS ========================
@@ -23,6 +33,7 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: $white-color;
+    font-family: $secondary-font;
 }
 
 
@@ -49,6 +60,10 @@
 
 .m-auto {
     margin: auto;
+}
+
+.mt-1 {
+    margin-top: 1rem;
 }
 
 .pointer {

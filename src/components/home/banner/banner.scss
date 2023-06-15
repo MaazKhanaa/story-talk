@@ -1,6 +1,16 @@
 .banner-wrapper {
-
     position: relative;
+
+
+    .banner-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 90vh;
+    }
+
+
 
     .banner-img {
         position: absolute;
@@ -8,4 +18,15 @@
         left: 0;
         z-index: -1;
     }
+
+    .mt-1 {
+        margin-top: 1rem;
+    }
+
+
+    .mt-5{
+        margin-top: 5rem;
+    }
+    
+
 }

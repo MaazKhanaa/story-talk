@@ -27,7 +27,7 @@ const HeaderComponent = () => {
             <Row justify="space-around" align="middle">
                 <Col >
                     <div className='color-white' style={{ margin: "1rem" }}>
-                        <Link to="/home" className='cursor'>
+                        <Link to="/home" className='cursor fs-18'>
                             <LogoSvg />
                         </Link>
                     </div>
@@ -62,7 +62,7 @@ const HeaderComponent = () => {
                         {/* <Col>Eng</Col> */}
                         <Col>
                             <Link to="/sign-in" className='nav-item'>Login</Link>
-                            <span>/</span>
+                            <span className='color-white' style={{margin:"0 0.5rem"}}>/</span>
                             <Link to="/sign-up" className='nav-item'>Signup</Link>
                         </Col>
                     </Row>

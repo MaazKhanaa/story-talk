@@ -1,6 +1,7 @@
-@import "/src/style/vairables";
+@import "/src/style/variables";
 
 .header-wrapper {
+    z-index: 1;
 
     .ant-menu-light.ant-menu-horizontal {
 
@@ -8,12 +9,13 @@
         color: $white-color;
 
         .ant-menu-item-selected {
-            color: #3DB8A5;
+            color: $primary-color;
             text-decoration: none !important;
+
         }
 
         :hover {
-            color: #3DB8A5;
+            color: $primary-color;
         }
 
         ::after {
