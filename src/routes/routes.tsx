@@ -62,55 +62,35 @@ const NONRESTRICTED_ROUTES = [
 const LAYOUT_ROUTES = [
     {
         path: "/",
-        element: <APPLAYOUT />,
+        element: (
+            <RequireAuth>
+                <APPLAYOUT />
+            </RequireAuth>
+        ),
         children: [
             {
                 path: "home",
-                element: (
-                    <RequireAuth>
-                        <HOMEPAGE />
-                    </RequireAuth>
-                ),
+                element: <HOMEPAGE />
             },
             {
                 path: "about",
-                element: (
-                    <RequireAuth>
-                        <ABOUTPAGE />
-                    </RequireAuth>
-                )
+                element: <ABOUTPAGE />
             },
             {
                 path: "pricing",
-                element: (
-                    <RequireAuth>
-                        <PRICINGPAGE />
-                    </RequireAuth>
-                )
+                element: <PRICINGPAGE />
             },
             {
                 path: "contact-us",
-                element: (
-                    <RequireAuth>
-                        <CONTACTUSPAGE />
-                    </RequireAuth>
-                )
+                element: <CONTACTUSPAGE />
             },
             {
                 path: "sign-in",
-                element: (
-                    <RequireAuth>
-                        <SIGNINPAGE />
-                    </RequireAuth>
-                )
+                element: <SIGNINPAGE />
             },
             {
                 path: "sign-up",
-                element: (
-                    <RequireAuth>
-                        <SIGNUPPAGE />
-                    </RequireAuth>
-                )
+                element: <SIGNUPPAGE />
             },
             ...RESTRICTED_ROUTES,
         ],
