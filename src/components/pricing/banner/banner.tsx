@@ -14,18 +14,17 @@ import './banner.scss';
 
 const BannerComponent = () => {
     return (
-        <div className='banner-wrapper'>
-            {/* <h2>Banner</h2> */}
-            <span className='banner-shadow'>
-                <img src={APP_ASSETS.pricingBannerBgImg} alt="banner" width="100%" className='banner-img' />
+        <div className='banner-wrapper' style={{ backgroundImage: `url(${APP_ASSETS.pricingBannerBgImg})` }}>
 
-            </span>
-
-            <div className='banner-content'>
-                <AppHeading text="Pricing" />
+            <div className='banner-overlay'>
+                <div className='banner-content'>
+                    <AppHeading text="Pricing" />
+                </div>
             </div>
 
         </div>
+
+
     )
 }
 

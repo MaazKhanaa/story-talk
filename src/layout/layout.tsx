@@ -13,8 +13,6 @@ import HeaderComponent from './header/header';
 
 
 
-// ================== HOOKs ==================
-
 
 const { Content } = Layout;
 
@@ -31,10 +29,10 @@ const LayoutComponent = () => {
 
     return (
         <Layout className='bg-none'>
+
+            <HeaderComponent />
+
             <Layout className='bg-none'>
-                <div className='relative'>
-                    <HeaderComponent />
-                </div>
                 <Content>
                     <Outlet />
                 </Content>

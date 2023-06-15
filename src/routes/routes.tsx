@@ -60,11 +60,11 @@ const NONRESTRICTED_ROUTES = [
 // =============== Layout Routes ===============
 // =============== Render Pages in Layout so write in children of APP_LAYOUT ===============
 const LAYOUT_ROUTES = [
-    { path: "/", element: <Navigate to="/home" /> },
+    { path: "/", element: <Navigate to="home" /> },
     { path: "*", element: <UNAUTHORIZEDPAGE /> },
     { path: "/dashboard", element: <DASHBOARDPAGE /> },
     {
-        path: "",
+        path: "/",
         element: (
             <RequireAuth>
                 <APPLAYOUT />
@@ -72,27 +72,27 @@ const LAYOUT_ROUTES = [
         ),
         children: [
             {
-                path: "/home",
+                path: "home",
                 element: <HOMEPAGE />
             },
             {
-                path: "/about",
+                path: "about",
                 element: <ABOUTPAGE />
             },
             {
-                path: "/pricing",
+                path: "pricing",
                 element: <PRICINGPAGE />
             },
             {
-                path: "/contact-us",
+                path: "contact-us",
                 element: <CONTACTUSPAGE />
             },
             {
-                path: "/sign-in",
+                path: "sign-in",
                 element: <SIGNINPAGE />
             },
             {
-                path: "/sign-up",
+                path: "sign-up",
                 element: <SIGNUPPAGE />
             },
         ],
