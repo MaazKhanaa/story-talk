@@ -19,6 +19,9 @@ const APP_ASSETS = {
 
     // ==================== ICONS ====================
     arrowDownIcon: require("./icons/scroll-down.png"),
+    lockIcon: require("./icons/lock.png"),
+    mailIcon: require("./icons/mail.png"),
+    viewIcon: require("./icons/view.png"),
 
 
 };

@@ -1,0 +1,43 @@
+.sign-in-wrapper {
+
+    .form-heading {
+        font-family: 'Bebas Neue';
+        font-weight: 700;
+        font-size: 54.5988px;
+        line-height: 55px;
+        text-align: center;
+        letter-spacing: 3.56079px;
+        text-transform: uppercase;
+    }
+
+    .login-form-forgot,
+    .login-form-button {
+        font-family: 'Open Sans';
+        padding: 12.24px 28.4864px;
+        width: 197.97px;
+        height: 47.48px;
+
+        border-radius: 47.4773px;
+        float: right;
+        text-align: center;
+        margin-left: auto;
+
+        &.login-form-forgot {
+            background: #3DB8A5;
+            color: #fff;
+        }
+
+        &.login-form-button {
+            background: #fff;
+            color: #3DB8A5;
+            border: 2px solid #3DB8A5;
+            border-radius: 45px;
+            width: 100%;
+            font-family: 'Open Sans';
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 19px;
+            text-align: center;
+        }
+    }
+}
