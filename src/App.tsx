@@ -8,9 +8,6 @@ import { ROUTES } from "./routes/routes";
 function App() {
   const pages = useRoutes(ROUTES);
 
-  console.log(" ===============> ", ROUTES);
-
-
   return (
     <div className="App">{pages}</div>
   );
