@@ -93,3 +93,47 @@
 .w-100 {
     width: 100%;
 }
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  
+    @media (min-width: 576px) {
+      max-width: 540px;
+    }
+  
+    @media (min-width: 768px) {
+      max-width: 720px;
+    }
+  
+    @media (min-width: 992px) {
+      max-width: 960px;
+    }
+  
+    @media (min-width: 1200px) {
+      max-width: 1140px;
+    }
+  }
+
+
+// ======================== Headings ========================
+.topHeading {
+    font-family: $primary-font;
+    font-size: 30px;
+    font-weight: 400;
+    position: relative;
+    display: inline-block;
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -8px;
+        width: 100%;
+        height: 6px;
+        background-color: #3DB3A2;
+      }
+}
