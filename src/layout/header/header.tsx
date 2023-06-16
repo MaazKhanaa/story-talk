@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 
 
@@ -27,43 +27,56 @@ const HeaderComponent = () => {
             <Row justify="space-around" align="middle">
                 <Col >
                     <div className='color-white' style={{ margin: "1rem" }}>
-                        <Link to="/home" className='cursor fs-18'>
+                        <NavLink to="/home" className='cursor fs-18'>
                             <LogoSvg />
-                        </Link>
+                        </NavLink>
                     </div>
                 </Col>
-                <Col xs={12} className='text-center d-block'>
+
+                <NavLink to="/home" className='nav-item'>
+                    Home
+                </NavLink>
+
+                <NavLink to="/about" className='nav-item'>
+                    About
+                </NavLink>
+
+                <NavLink to="/pricing" className='nav-item'>
+                    Pricing
+                </NavLink>
+
+                {/* <Col xs={12} className='text-center d-block'>
                     <Menu className='bg-none text-center d-block' mode="horizontal" defaultSelectedKeys={['1']}>
                         <Menu.Item key="1">
-                            <Link to="/home" className='nav-item'>
+                            <NavLink to="/home" className='nav-item'>
                                 Home
-                            </Link>
+                            </NavLink>
                         </Menu.Item>
                         <Menu.Item key="2">
-                            <Link to="/about" className='nav-item'>
+                            <NavLink to="/about" className='nav-item'>
                                 About
-                            </Link>
+                            </NavLink>
                         </Menu.Item>
                         <Menu.Item key="3">
-                            <Link to="/pricing" className='nav-item'>
+                            <NavLink to="/pricing" className='nav-item'>
                                 Pricing
-                            </Link>
+                            </NavLink>
                         </Menu.Item>
                         <Menu.Item key="4">
-                            <Link to="/contact-us" className='nav-item'>
+                            <NavLink to="/contact-us" className='nav-item'>
                                 Contact Us
-                            </Link>
+                            </NavLink>
                         </Menu.Item>
                     </Menu>
-                </Col>
+                </Col> */}
 
                 <Col>
                     <Row>
                         {/* <Col>Eng</Col> */}
                         <Col>
-                            <Link to="/sign-in" className='nav-item'>Login</Link>
+                            <NavLink to="/sign-in" className='nav-item'>Login</NavLink>
                             <span className='color-white' style={{ margin: "0 0.5rem" }}>/</span>
-                            <Link to="/sign-up" className='nav-item'>Signup</Link>
+                            <NavLink to="/sign-up" className='nav-item'>Signup</NavLink>
                         </Col>
                     </Row>
                 </Col>

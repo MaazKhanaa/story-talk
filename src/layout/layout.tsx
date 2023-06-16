@@ -19,7 +19,7 @@ const { Content } = Layout;
 
 
 
-const LayoutComponent = () => {
+const LayoutComponent = ({ children }: any) => {
 
     // const { isAuthenticated } = useAuth();
 
@@ -34,7 +34,7 @@ const LayoutComponent = () => {
 
             <Layout className='bg-none'>
                 <Content>
-                    <Outlet />
+                    {children || <Outlet />}
                 </Content>
             </Layout>
         </Layout>

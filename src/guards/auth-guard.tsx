@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
 
 
-const RequireAuth = ({ children, allowedRoles }: any) => {
+const AuthGuard = ({ children, allowedRoles }: any) => {
     // const { role }: any = JSON.parse(localStorage.getItem("user") || "{}");
 
     // const auth = {
@@ -16,4 +16,4 @@ const RequireAuth = ({ children, allowedRoles }: any) => {
 
     return children || <Outlet />
 };
-export default RequireAuth;
+export default AuthGuard;
