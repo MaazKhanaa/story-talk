@@ -14,8 +14,6 @@ const RequireAuth = ({ children, allowedRoles }: any) => {
     //         <Navigate to="/unauthorized" state={{ from: location }} replace />) : (
     //     <Navigate to="/login" state={{ from: location }} replace />);
 
-    return (
-        children || <Outlet />
-    )
+    return children || <Outlet />
 };
 export default RequireAuth;

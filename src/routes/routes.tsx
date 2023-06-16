@@ -45,7 +45,21 @@ const DASHBOARDPAGE = Loadable(lazy(() => import("../pages/dashboard")));
 
 // =============== Restricted Routes ===============
 const RESTRICTED_ROUTES = [
-    { path: "/dashboard", element: <DASHBOARDPAGE /> },
+    { path: "/dashboard", element: <Navigate to="dashboard" /> },
+    {
+        path: "/",
+        element: "Dashboard layout here",
+        children: [
+            {
+                path: "dashboard",
+                element: (
+                    <RequireAuth>
+                        <DASHBOARDPAGE />
+                    </RequireAuth>
+                )
+            },
+        ]
+    }
 ];
 
 
@@ -62,14 +76,10 @@ const NONRESTRICTED_ROUTES = [
 const LAYOUT_ROUTES = [
     { path: "/", element: <Navigate to="home" /> },
     { path: "*", element: <UNAUTHORIZEDPAGE /> },
-    { path: "/dashboard", element: <DASHBOARDPAGE /> },
+    // { path: "/dashboard", element: <DASHBOARDPAGE /> },
     {
         path: "/",
-        element: (
-            <RequireAuth>
-                <APPLAYOUT />
-            </RequireAuth>
-        ),
+        element: <APPLAYOUT />,
         children: [
             {
                 path: "home",
@@ -102,4 +112,5 @@ const LAYOUT_ROUTES = [
 
 
 // =============== Combine All Routes ===============
+// export const ROUTES = [...RESTRICTED_ROUTES, ...LAYOUT_ROUTES];
 export const ROUTES = [...LAYOUT_ROUTES];
